@@ -1,0 +1,11 @@
+name: 'test-action-contract'
+description: 'confirm secrets behave as expected in GitHub actions'
+author: Benjamin Coe
+inputs:
+  token:
+    description: 'GitHub token for creating and grooming release PRs, defaults to using secrets.GITHUB_TOKEN'
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: 'node14'
+  main: 'dist/index.js'

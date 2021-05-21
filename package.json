@@ -1,0 +1,36 @@
+{
+  "name": "test-action-contract",
+  "private": true,
+  "version": "2.27.0",
+  "description": "confirm secrets behave as expected in GitHub actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "fix": "standard --fix",
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcoe/test-action-contract.git"
+  },
+  "keywords": [
+    "test-action-contract",
+    "action"
+  ],
+  "author": "Ben Coe <bencoe@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bcoe/test-action-contract/issues"
+  },
+  "homepage": "https://github.com/bcoe/test-action-contract#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "standard": "^16.0.3"
+  },
+  "standard": {
+    "ignore": "dist/"
+  }
+}
